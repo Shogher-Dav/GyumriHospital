@@ -1,0 +1,102 @@
+@import "../../../theme/fonts.scss";
+@import "../../../theme/variables.scss";
+
+.footer-wrapper {
+    box-shadow: 0px 3px 11px $shadow-color;
+    -moz-box-shadow: 0px 3px 11px $shadow-color;
+    -webkit-box-shadow: 0px 3px 11px $shadow-color;
+    padding: 45px 0 25px 0;
+
+    .footer-info {
+        width: 79.6%;
+        margin: 0 auto;
+    }
+
+   
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 13.156px;
+        .top-equal {
+            margin-top: 73px;
+        }
+
+        &-title {
+            font-family: "LinetoCircularBlack" ;
+            font-size: $fs25;
+            letter-spacing: 0px;
+
+            &-follow {
+                margin-bottom: 15px;
+            }
+        }
+
+        &-text {
+            margin-top: 39px;
+            font-family: "LinetoCircularProBook";
+            font-size: $fs20;
+            letter-spacing: 0px;
+
+        }
+
+        .social-logos { 
+            display: flex;
+            justify-content: space-between;
+            width: 180px;
+
+
+            .fb-logo {
+                width: 10px;
+                height: 20px;
+
+            }
+            .twitter-logo {
+                width: 24px;
+                height: 20px;
+
+            }
+            .linkedin-logo {
+                width: 20px;
+                height: 20px;
+
+            }
+            .instagram-logo {
+                width: 20px;
+                height: 20px;
+
+            }
+        }
+        
+    }
+
+    .address-bottom-text {
+        color: $footer-light-text-color;
+        font-family: "LinetoCircularProBook";
+        font-size: $fs20;
+        letter-spacing: 0px;
+    }
+}
+
+.mail {
+    position: relative;
+
+    input[type=email] {
+        border: 0;
+        border-bottom: 1px solid $box-shadow-color;
+        width:395px;
+    }
+
+    &-label {
+        font-family: "LinetoCircularProBook";
+        font-size: $fs20;
+        letter-spacing: 0px;
+        position: absolute;
+        top: 0px;
+        left: 0;
+    }
+
+    .arrow-icon {
+        position: absolute;
+        left: 368px;
+    }
+}

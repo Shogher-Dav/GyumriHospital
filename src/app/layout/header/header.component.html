@@ -1,0 +1,64 @@
+<div class="header">
+    <div class="header-menu">
+        <div class="menu-btn">
+            <div class="menu-btn_burger">
+            </div>
+        </div>
+        <img class="search-logo" src="../../../assets/images/search-logo.png" alt="search">
+        <img class="user-logo" src="../../../assets/images/user-logo.png" alt="user login">
+    </div>
+    <div class="header-info">
+        <div class="module"></div>
+        <div class="info">
+            <div class="location">
+                <img class="location-logo" src="../../../assets/images/location.png" alt="location">
+                <span>Yerevan, Armenia</span>
+            </div>
+            <span class="project-name">Gyumri Hospital Reconstruction</span>
+            <div class="save-project">
+                <img class="save-project-logo" src="../../../assets/images//bookmark-logo.png" alt="">
+               <span class="save-project-text">Save project</span>
+            </div>
+   
+            <div class="progress">
+                <div class="progress-bar">
+                    <div class="progress-bar-child" style="width: 11%; z-index: 6; background-color: #F11B5D;
+                    border-right: 3px solid white;"></div>
+                    <div class="progress-bar-child" style="width: 23%; z-index: 5; background-color: #F11B5D;
+                     border-right: 3px solid white;"></div> 
+                     <div class="progress-bar-child" style="width: 31%; z-index: 4; background-color: #F11B5D;
+                      border-right: 3px solid white;"></div>
+                    <div class="progress-bar-child" style="width: 44.4%; z-index: 3; background-color: #F11B5D;"></div>
+                    <div class="progress-bar-child" style="width: 65.75%; z-index: 1; background-color: #F11B5D47"></div>
+
+                    <div class="progress-text-wrapper">
+                        <div class="work-progress">
+                            <p class="progress-text1" for="work-progress">Work Progress</p>
+                            <p class="progress-text2">for  {{currentDate | date:'d LLL'}}</p>                        
+                        </div> 
+                        <div class=collected>
+                            <p class="progress-text1" for="work-progress">Collected</p>
+                            <p class="progress-text2">{{collactedDonates}}$</p>                        
+                        </div>                         
+                    </div>
+                </div> 
+            </div>            
+        </div>
+    </div>
+
+    <div class="header-menu">
+        <nav role="navigation" class="navigation">
+            <a class="navigation-about">About</a>
+            <a class="navigation-comments">Comments</a>
+        </nav>
+
+        <div class="finish-date"> 
+            <p class="number">{{finishDate | date:'d LLL'}}</p>  
+            <span class="label">Finish</span> 
+        </div> 
+        <div class="donats-number">
+            <p class="number">{{numberOfDonators}}</p>
+            <span class="label">Donators</span>
+        </div>
+    </div>
+</div>

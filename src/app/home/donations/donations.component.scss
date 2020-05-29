@@ -1,0 +1,66 @@
+@import "../../../theme/fonts.scss";
+@import "../../../theme/variables.scss";
+
+.donations-wrapper {
+
+    .donations {
+        width: 482px;
+        box-shadow: 0px 3px 11px $shadow-color;
+        padding:  28.32px 32px 22.51px 32px;
+
+
+        &-title {
+            font-family:"LinetoCircularBlack";
+            font-size: 32px;
+            letter-spacing: 0.25px;
+        }
+
+        &-details {
+            display: flex;
+            align-items: center;
+            padding-bottom: 13px;
+            border-bottom: 1px solid $border-color;
+            margin-bottom: 30.74px;
+
+            .user-image {
+                width: 42px;
+                height: 42px;
+                margin-right: 26.79px;
+
+            }
+            .emty-image {
+                position: relative;
+            }
+            .name-label {
+                position: absolute;
+                top: 9px;
+                left: 11px;
+                color: $white;
+                font-family:"LinetoCircularProBook";
+                font-size: 18px;
+
+
+            }
+            .date {
+                font-family:"LinetoCircularProBook";
+                font-size: 16px;
+                letter-spacing: -0.34px;
+                color: #858585;
+
+            }
+            .name {
+                font-family:"LinetoCircularBlack";
+                font-size: $fs25;
+                letter-spacing: -0.53px;
+                float: left;
+            }
+            .amount {
+                font-family:"LinetoCircularProBook";
+                font-size: $fs25;
+                letter-spacing: -0.53px;
+                color: $primary-pink;
+                margin-left: auto;
+            }
+        }
+    }
+}

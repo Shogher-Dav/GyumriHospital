@@ -1,0 +1,48 @@
+@import "../../../theme/fonts.scss";
+@import "../../../theme/variables.scss";
+
+.about {
+    &-title {
+        font-family: "LinetoCircularProBook" ;
+        font-size: $fs24;
+        font-weight: bold;
+        letter-spacing: -0.42px;
+    }
+    .description-text {
+        margin-top: 0;
+
+    }
+
+    &-text {
+
+        font-family: "LinetoCircularProBook";
+        font-size: 20px;
+        letter-spacing: 0px;
+        color: #272727;
+    }
+}
+
+.share {
+    font-family: "LinetoCircularBlack";
+    font-size: $fs32;
+    letter-spacing: 0.25px;
+    margin-top: 120px;
+    margin-bottom: 235.59px;
+
+    &-social-logos {
+        margin-top: 24.08px;
+        .fb-logo {
+            margin-right: 14.17px;
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+        }
+        .linkedin-logo {
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+        }
+    }
+}
+
+

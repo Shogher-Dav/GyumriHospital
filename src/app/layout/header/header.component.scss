@@ -1,0 +1,258 @@
+@import "../../../theme/fonts.scss";
+@import "../../../theme/variables.scss";
+
+.header {
+ 
+
+    &-menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 83px;
+
+        .menu-btn {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 32px;
+            height: 20px;
+            transition: all .5s ease-in-out;
+            margin-right: auto;
+            margin-left: 71px;
+            cursor: pointer;
+
+
+
+            &_burger {
+                width: 32px;
+                height: 2px;
+                background: $hamburger-menu-color;
+                border-radius: 5px;
+
+                &:before, &:after {
+                    content: "";
+                    position: absolute;
+                    width: 32px;
+                    height: 2px;
+                    background: $hamburger-menu-color;
+                    border-radius: 5px;
+                }
+                &:before {
+                    transform: translateY(-8px);
+                }
+
+                &:after {
+                    transform: translateY(8px);
+                }
+            }
+        }
+
+        .search-logo {
+            width: 20.29px;
+            height: 20.29px;
+            cursor: pointer;
+
+
+        }
+        .user-logo {
+            width: 16.2px;
+            height: 20px;
+            margin-left: 37.11px;
+            margin-right: 85.3px;
+            cursor: pointer;
+
+        }
+  
+       
+    }
+
+    .header-info {
+        background: -webkit-linear-gradient(180deg, #00000000 0%, #0000007A 100%);
+        background: -moz-linear-gradient(180deg, #00000000 0%, #0000007A 100%);
+        background: url("../../../assets/images/hospital.png") 
+        center center  no-repeat, linear-gradient(180deg, #00000000 0%, #0000007A 100%);
+        height: 835px;
+        position: relative;
+
+        .info {
+            position: absolute; 
+            bottom: 111.37px;
+            color: $white;
+            margin-left: 11.20%;
+            .location {
+                font-family: "LinetoCircularProBook";
+                font-size: $fs23;
+                letter-spacing: -0.38px;
+
+                &-logo {
+                    width: 13px;
+                    height: 18px;
+                    margin-right: 11px;
+                }
+            }
+
+            .project-name { 
+                font-family: "LinetoCircularBlack";
+                font-size: 63px;
+                letter-spacing: 0.5px;
+                margin-bottom: 10px;
+                margin-left: -5px;
+            }
+
+            .save-project {
+                font-family: "LinetoCircularProBook";
+                font-size: $fs23;
+                letter-spacing: -0.38px;
+
+                &-logo {
+                    width: 13px;
+                    height: 21px;
+                    margin-right: 14.04px;
+                    position: relative;
+                }
+                &-text {
+                    position: absolute;
+                    top: 106px;
+                }
+            }
+
+          
+        }
+
+
+
+        .progress {
+            margin-top: 30.5px;
+            width: 80vw;
+            &-bar {
+                height: 11px;
+                border: 1px solid #8a898a;
+                position: relative;
+                background-color: $white;
+                border-radius: 40px;
+
+                &-child {
+                    background-color: #8a898a;
+                    height: 100%;
+                    position: absolute;
+                }
+            }
+
+
+            .progress-text-wrapper {
+                display: flex;
+                text-align: center;
+                .work-progress {
+                    margin-left: 39%;
+                }
+            
+                .collected {
+                    margin-left: 11%;
+                }
+            
+                .progress-text1 {
+                    font-family: "LinetoCircularProBook";
+                    letter-spacing: 0.61px;
+                    font-size: $fs22;
+                    margin: 11.74px 0 0 0; 
+                }
+            
+                .progress-text2 {
+                    font-family: "LinetoCircularBlack";
+                    font-size:  $fs22;
+                    margin: 1px 0 0 0; 
+                }
+            }
+        }
+    }
+
+    &-menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 83px;
+        box-shadow: 0px 3px 11px $shadow-color;
+        -moz-box-shadow: 0px 3px 11px $shadow-color;
+        -webkit-box-shadow: 0px 3px 11px $shadow-color;
+    
+        .navigation {
+            display: flex;
+            margin-right: auto;
+            font-family: "LinetoCircularProBook";
+            font-size: $fs24;
+            letter-spacing: -0.42px;
+
+            &-about {
+                margin: 0 94px;
+                border-bottom: 3px solid $primary-pink;
+                padding: 27px 44px;  
+                cursor: pointer;
+           
+            }
+
+            &-comments {
+                border-bottom: 3px solid $primary-pink;
+                padding: 27px 44px;
+                cursor: pointer;
+
+            }
+
+        }
+
+        .finish-date {
+            padding: 0px 81.27px;
+            position: relative;
+
+            &:after {
+                content: "";
+                height: 43px;
+                width: 1px;
+                position: absolute;
+                right: 0;
+                top: 11px;
+                background-color: $border-color; 
+
+            }
+        }
+
+        .donats-number {
+            margin-right: 244.5px;
+            padding: 0px 81.27px;
+            position: relative;
+
+            &:after {
+                content: "";
+                height: 43px;
+                width: 1px;
+                position: absolute;
+                right: 0;
+                top: 11px;
+                background-color: $border-color; 
+
+            }
+        }
+
+        .number {
+            font-family: "LinetoCircularBlack";
+            font-size: $fs32;
+            letter-spacing: -0.53px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .label {
+            font-family: "LinetoCircularProBook";
+            font-size: $fs20;
+            letter-spacing: -0.34px;
+            opacity: 0.96;
+        }
+        
+    }
+}
+
+
+
+
+
+

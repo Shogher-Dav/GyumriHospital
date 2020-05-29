@@ -1,0 +1,21 @@
+<div class="donations-wrapper">
+    <div class="donations">
+        <div class="donations-title">
+            <p>Donations</p>
+        </div>
+        <div class="donations-details" *ngFor = "let user of donators">
+            <div class="user-image" *ngIf="user.image">
+                <img  [src]="user.image" alt="Donator Profile image">
+            </div>
+            <div class="user-image emty-image" *ngIf="user.image === ''">
+                <img  src="../../../assets/images/user-bg.png" alt="Donator Profile image">
+                <label class="name-label" for="user-name">RS</label>
+            </div>
+            <div>
+                <div class="date">{{user.date}}</div>
+                <div class="name">{{user.name}}</div>
+            </div>
+            <div class="amount">${{user.amount}}</div>
+        </div>
+    </div>
+</div>
