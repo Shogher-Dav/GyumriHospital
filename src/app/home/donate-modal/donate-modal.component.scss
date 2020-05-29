@@ -1,0 +1,144 @@
+@import "../../../theme/fonts.scss";
+@import "../../../theme/variables.scss";
+
+.donate-modal {
+    padding: 19.4px 32.82px 0 32px;
+    width: 412px;
+    height: 482px;
+    box-shadow: 0px 3px 15px $shadow-color;
+    background-color: $white;
+
+    .goal {
+        text-align: left;
+        font-family:"LinetoCircularProBook";
+        font: $fs18;
+        letter-spacing: 0.18px;
+        color: $text-light-color;
+    }
+
+    .amount-first {
+        font-family:"LinetoCircularBlack";
+        font-size: $fs50;
+        letter-spacing: 0.5px;
+
+    }
+    .amount-second {
+        font-family:"LinetoCircularProBook";
+        font-size: $fs25;
+        letter-spacing: 0.25px;
+    }
+
+    .amount-info {
+
+        font-family: "LinetoCircularProBook";
+        font-size: $fs16;
+        letter-spacing: 0.16px;
+        color: $light-grey;
+        margin-top: 31px; 
+        margin-bottom: 28.68px;
+
+        &-star {
+            color: $primary-pink;
+        }
+
+        .foundation {
+            color: $black;
+        }
+    }
+
+    .donate {
+        position: relative;
+        height: 50px;
+
+        input[type=text] {
+            width: 347px;
+            font-family:"LinetoCircularProBook";
+            font-size: 18px;
+            letter-spacing: -0.38px;
+            color: $text-light-color;
+            padding: 11px 19px;
+            border: 1px solid  $input-border-color;
+        }
+        .currensy-select {
+            position: absolute;
+            font-family:"LinetoCircularProBook";
+            font-size: 18px;
+            letter-spacing: -0.38px;
+            top: 12px;
+            left: 260.71px;
+            height: 23px;
+            border: none;
+            background-color: $white;
+            padding: 0 14px;
+            border-left: 1px solid $input-border-color;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            transition: color 0.3s ease, background-color 0.3s ease, border-bottom-color 0.3s ease;
+
+            &:focus, &:hover {
+                outline: none;
+            }
+          }
+
+          // For IE <= 11 
+          select::-ms-expand {
+            display: none; 
+          }
+    
+        .arrow-icon-down {
+            position: absolute;
+            cursor: pointer;
+            top: 16px;
+            right: 16px;
+            width: 25px;
+            height: 21px;
+            pointer-events: none;
+            padding-left: 5px;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+    }
+
+    .donate-btn {
+        width: 347px;
+        height: 50px;
+        border: 0;
+        background-color: $black;
+        color: $white;
+        box-shadow: 0px 3px 13px $box-shadow-color;
+        font-family: "LinetoCircularProBook";
+        font-size: $fs15;
+        letter-spacing: 2.31px;
+        margin-top: 38px;
+        margin-bottom: 30.32px;
+        cursor: pointer;
+
+        &:hover {
+            color: $black;
+            border-color: currentColor;
+            background-color: white;
+            box-shadow: 0px 3px 13px $box-shadow-color;
+          }
+
+        &:focus {
+            outline: none;
+        }
+        &:active {
+            transform: translateY(1px);
+            filter: saturate(150%);
+        }
+    }
+    .questions {
+        font-size: $fs18;
+        letter-spacing: 0.18px;
+        text-align: center;
+        &-help {
+            font-family: "LinetoCircularProBook";
+            margin: 0;
+        }
+        &-more {
+            font-family: "LinetoCircularBlack";
+            margin: 0;
+        }
+    }
+}

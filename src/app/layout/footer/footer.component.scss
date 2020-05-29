@@ -70,7 +70,7 @@
     }
 
     .address-bottom-text {
-        color: $footer-light-text-color;
+        color: $text-light-color;
         font-family: "LinetoCircularProBook";
         font-size: $fs20;
         letter-spacing: 0px;
@@ -82,7 +82,7 @@
 
     input[type=email] {
         border: 0;
-        border-bottom: 1px solid $box-shadow-color;
+        border-bottom: 1px solid $text-light-color;
         width:395px;
     }
 

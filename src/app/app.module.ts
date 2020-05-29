@@ -9,6 +9,7 @@ import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { DonationsComponent } from './home/donations/donations.component';
 import { HomeComponent } from './home/home.component';
+import { DonateModalComponent } from './home/donate-modal/donate-modal.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeComponent } from './home/home.component';
     HeaderComponent,
     FooterComponent,
     DonationsComponent,
-    HomeComponent
+    HomeComponent,
+    DonateModalComponent
   ],
   imports: [
     BrowserModule,

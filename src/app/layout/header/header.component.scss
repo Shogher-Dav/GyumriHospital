@@ -75,6 +75,14 @@
         height: 835px;
         position: relative;
 
+        &-modal {
+            position: absolute;
+            left: 70.2%;
+            right: 8.3%;
+            top: 14.7%;
+            bottom: 12.4%;
+        }
+
         .info {
             position: absolute; 
             bottom: 111.37px;
