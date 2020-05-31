@@ -1,2 +1,30 @@
-<p>comments works!</p>
+<div class="comments-wrapper">
+    <div class="comments">
+        <div class="comments-write">
+            <img class="user-image" src="../../../assets/images/user7.png" alt="">
+            <input class="comments-write-input" type="text" placeholder="Write your comment...">
+        </div>
+        <div class="input-file"> 
+            <input type="file" id="file" />
+            <label for="file"> + Upload image</label> 
+        </div>
+    </div>
+    <div class="comments-list-area">
+        <span class="comments-number">46 comments</span>
+        <div *ngFor="let comment of comments" class="comments-list">
+            <div>
+                <img class="user-image" [src]="comment.user.image" alt="">
+            </div>
+            <div>
+                <div>
+                    <span class="comments-list-name">{{comment.user.name}}</span>
+                    <span class="comments-list-date">{{comment.user.date}}</span>
+                    <p *ngIf="comment.text !== ''" class="comments-list-text">{{comment.text}}</p>
+                </div>
+                <img  *ngIf="comment.image !== ''" class="comment-image" [src]="comment.image" alt="">
+            </div>
+        </div>
+    </div>
+     <span class="comments-load-btn">Load more comments</span>
+</div>
 

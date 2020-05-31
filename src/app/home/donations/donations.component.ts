@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IDonators } from 'src/app/core/interfaces/IDonators';
+import {  IUser } from 'src/app/core/interfaces/IUser';
 
 @Component({
   selector: 'app-donations',
@@ -8,14 +8,8 @@ import { IDonators } from 'src/app/core/interfaces/IDonators';
 })
 export class DonationsComponent implements OnInit {
 
-   public donators: IDonators[];
-  //public donators: any;
+   public donators: IUser[];
 
-  // id: number;
-  // name: string;
-  // image: string;
-  // amount: number;
-  // date: string;
 
   constructor() {
         this.donators = [

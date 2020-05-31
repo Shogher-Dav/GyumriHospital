@@ -193,16 +193,20 @@
 
             &-about {
                 margin: 0 94px;
-                border-bottom: 3px solid $primary-pink;
                 padding: 27px 44px;  
                 cursor: pointer;
-           
+                text-decoration: none;
+                color: $black;
             }
 
             &-comments {
-                border-bottom: 3px solid $primary-pink;
                 padding: 27px 44px;
                 cursor: pointer;
+                text-decoration: none;
+                color: $black;
+            }
+            &-active {
+                border-bottom: 3px solid $primary-pink;
 
             }
 

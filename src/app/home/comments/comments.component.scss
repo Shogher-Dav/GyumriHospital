@@ -1,0 +1,133 @@
+@import "../../../theme/fonts.scss";
+@import "../../../theme/variables.scss";
+
+.comments-wrapper {
+
+    .user-image {
+        width: 50px;
+        height: 50px;
+        margin-right: 24px;
+    }
+
+    .comment-image {
+        width: 132px;
+        height: 130px;
+    }
+ 
+
+    .comments {
+
+        &-write {
+            display: flex;
+    
+            &-input { 
+                width: 88.5%;
+                height: 50px;
+                font-family:"LinetoCircularProBook";
+                font-size: 23px;
+                letter-spacing: -0.34px;
+                color: $text-light-color;
+                padding: 11px 19px;
+                border: 1px solid  $input-border-color;
+            }
+            
+        }
+    
+        .input-file {
+    
+            margin-left: 64px;
+            
+            [type="file"] {
+                border: 0;
+                height: 1px;
+                overflow: hidden;
+                padding: 0;
+                position: absolute !important;
+                white-space: nowrap;
+                width: 1px;
+            }
+                   
+            [type="file"] + label {
+                color: $primary-pink;
+                cursor: pointer;
+                display: inline-block;
+                font-family:"LinetoCircularProBook";
+                font-size: 18px;
+                letter-spacing: 0px;
+                padding: 5px;
+                margin-top: 3px;
+            }
+                    
+            [type="file"]:focus + label,
+            [type="file"] + label:hover {
+                background-color: $hover-pink;
+                    
+            }
+            [type="file"] + label:hover:active {
+                transform: translateY(1px);
+                filter: saturate(150%);
+            }
+    
+        }
+        &-number {
+            font-family:"LinetoCircularProBook";
+            font-weight: bold;
+            font-size: 20px;
+            letter-spacing: -0.42px;
+        }
+    
+        &-list {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 37.76px;
+    
+            &-name {
+                font-family:"LinetoCircularProBook";
+                font-size: 20px;
+                font-weight: bold;
+                letter-spacing: 0px;
+                margin: 0;
+    
+            }
+            &-text {
+                font-family:"LinetoCircularProBook";
+                font-size: 18px;
+                letter-spacing: 0px;
+                margin: 0;
+    
+            }
+    
+            &-date {
+                font-family:"LinetoCircularProBook";
+                font-size: 16px;
+                letter-spacing: 0px;
+                color: $text-light-color;
+                margin-left: 12px;
+            }
+        }
+    
+        &-load-btn {
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+            font-family:"LinetoCircularProBook";
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: -0.38px;
+            color: $primary-pink;
+            margin-bottom: 95.76px;
+            margin-top: 58.24px;
+          
+            &:active {
+                transform: translateY(1px);
+                filter: saturate(150%);
+            }
+        }
+    }
+
+    .comments-list-area {
+        margin-top: 25.24px;
+    }
+
+}
