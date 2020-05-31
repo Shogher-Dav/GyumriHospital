@@ -152,11 +152,11 @@
                 display: flex;
                 text-align: center;
                 .work-progress {
-                    margin-left: 39%;
+                    margin-left: 32%;
                 }
             
                 .collected {
-                    margin-left: 11%;
+                    margin-left: 10%;
                 }
             
                 .progress-text1 {
@@ -192,18 +192,23 @@
             letter-spacing: -0.42px;
 
             &-about {
+                width: 150px;
                 margin: 0 94px;
-                padding: 27px 44px;  
+                padding: 27px 0;  
                 cursor: pointer;
                 text-decoration: none;
                 color: $black;
+                text-align: center;
+
             }
 
             &-comments {
-                padding: 27px 44px;
+                width: 150px;
+                padding: 27px 0;
                 cursor: pointer;
                 text-decoration: none;
                 color: $black;
+                text-align: center;
             }
             &-active {
                 border-bottom: 3px solid $primary-pink;
